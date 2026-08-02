@@ -28,7 +28,7 @@ export default function SecaoEngracada() {
   return (
     <section className="relative px-6 py-20 sm:py-28 max-w-md mx-auto bg-verde-suave">
       <motion.p
-        className="font-display text-verde-escuro text-center text-2xl mb-4"
+        className="font-display text-verde-escuro text-center text-xl mb-4"
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.5 }}
@@ -40,7 +40,7 @@ export default function SecaoEngracada() {
       </motion.p>
 
       <motion.p
-        className="font-corpo text-tinta text-center text-xl leading-relaxed mb-3"
+        className="font-corpo text-tinta text-center text-2xl leading-relaxed mb-3"
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.5 }}
