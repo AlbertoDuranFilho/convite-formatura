@@ -40,7 +40,7 @@ export default function SecaoEngracada() {
       </motion.p>
 
       <motion.p
-        className="font-corpo text-tinta text-center text-sm leading-relaxed mb-3"
+        className="font-corpo text-tinta text-center text-xl leading-relaxed mb-3"
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.5 }}
