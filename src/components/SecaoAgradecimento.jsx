@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import ParallaxFoto from './ParallaxFoto'
 import img17 from '../assets/photos/img17.jpg'
 import img18 from '../assets/photos/img18.jpg'
 
@@ -27,23 +26,27 @@ export default function SecaoAgradecimento() {
       </motion.p>
 
       <div className="flex gap-4 justify-center mb-10">
-        <ParallaxFoto
+        <motion.img
           src={img18}
           alt="Pais de Déborah"
-          className="w-[46%]"
-          aspect="4/3"
-          rotate={-2}
-          delay={0.1}
-          factor={0.08}
+          className="w-[46%] rounded-sm shadow-xl object-cover"
+          style={{ aspectRatio: '4/3', rotate: '-2deg', objectPosition: 'center top' }}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.4 }}
+          custom={0.1}
+          variants={fadeUp}
         />
-        <ParallaxFoto
+        <motion.img
           src={img17}
           alt="Pais de Déborah"
-          className="w-[46%]"
-          aspect="4/3"
-          rotate={2}
-          delay={0.2}
-          factor={0.08}
+          className="w-[46%] rounded-sm shadow-xl object-cover"
+          style={{ aspectRatio: '4/3', rotate: '2deg', objectPosition: 'center top' }}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.4 }}
+          custom={0.2}
+          variants={fadeUp}
         />
       </div>
 

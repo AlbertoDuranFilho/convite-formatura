@@ -104,30 +104,22 @@ export default function SecaoCapa() {
 
         <CaminhoFormatura color={CAMINHO_COR} from={50} to={59} />
 
-        <motion.img
+        <ParallaxFoto
           src={img02}
           alt="Déborah de jaleco"
-          className="w-[82%] self-end rounded-sm shadow-xl object-cover"
-          style={{ aspectRatio: '3/4', rotate: '-2deg', objectPosition: 'center top' }}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.4 }}
-          custom={0.25}
-          variants={fadeUp}
+          className="w-[82%] self-end"
+          rotate={-2}
+          delay={0.25}
         />
 
         <CaminhoFormatura color={CAMINHO_COR} from={59} to={41} />
 
-        <motion.img
+        <ParallaxFoto
           src={img05}
           alt="Déborah de jaleco"
-          className="w-[82%] self-start rounded-sm shadow-xl object-cover"
-          style={{ aspectRatio: '3/4', rotate: '-3deg', objectPosition: 'center top' }}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.4 }}
-          custom={0.4}
-          variants={fadeUp}
+          className="w-[82%] self-start"
+          rotate={-3}
+          delay={0.4}
         />
 
         <CaminhoFormatura color={CAMINHO_COR} from={41} to={50} />
