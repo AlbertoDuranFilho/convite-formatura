@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Parisienne&family=Jost:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-bege-fundo: #FBF8F1;
+  --color-bege-carta: #FAF5EA;
+  --color-bege-profundo: #E3D2AC;
+  --color-verde-escuro: #253B2E;
+  --color-verde-medio: #4C6F52;
+  --color-verde-claro: #9FB89C;
+  --color-verde-envelope: #38503F;
+  --color-verde-envelope-escuro: #1F3327;
+  --color-verde-suave: #E4EAE0;
+  --color-dourado: #B8923D;
+  --color-tinta: #2C2820;
+
+  --font-display: 'Fraunces', serif;
+  --font-script: 'Parisienne', cursive;
+  --font-corpo: 'Jost', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bege-fundo);
+  color: var(--color-tinta);
+  font-family: var(--font-corpo);
+  overflow-x: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
