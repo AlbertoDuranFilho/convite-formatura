@@ -4,8 +4,8 @@ import img02 from "../assets/photos/img02.jpg";
 import img03 from "../assets/photos/img03.jpg";
 import img04 from "../assets/photos/img04.jpg";
 import img05 from "../assets/photos/img05.jpg";
-import ParallaxFoto from "./ParallaxFoto";
 import CaminhoFormatura from "./CaminhoFormatura";
+import ParallaxFoto from "./ParallaxFoto";
 
 const CAMINHO_COR = "#E4EAE0";
 
@@ -52,7 +52,7 @@ export default function SecaoCapa() {
           custom={0.1}
           variants={fadeUp}
         >
-          Após 6 anos de lutas, noites sem dormir…
+          Após 6 anos de dedicação, noites sem dormir…
         </motion.p>
 
         <CaminhoFormatura color={CAMINHO_COR} from={50} to={59} />
@@ -104,22 +104,30 @@ export default function SecaoCapa() {
 
         <CaminhoFormatura color={CAMINHO_COR} from={50} to={59} />
 
-        <ParallaxFoto
+        <motion.img
           src={img02}
           alt="Déborah de jaleco"
-          className="w-[82%] self-end"
-          rotate={-2}
-          delay={0.25}
+          className="w-[82%] self-end rounded-sm shadow-xl object-cover"
+          style={{ aspectRatio: '3/4', rotate: '-2deg', objectPosition: 'center top' }}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.4 }}
+          custom={0.25}
+          variants={fadeUp}
         />
 
         <CaminhoFormatura color={CAMINHO_COR} from={59} to={41} />
 
-        <ParallaxFoto
+        <motion.img
           src={img05}
           alt="Déborah de jaleco"
-          className="w-[82%] self-start"
-          rotate={-3}
-          delay={0.4}
+          className="w-[82%] self-start rounded-sm shadow-xl object-cover"
+          style={{ aspectRatio: '3/4', rotate: '-3deg', objectPosition: 'center top' }}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.4 }}
+          custom={0.4}
+          variants={fadeUp}
         />
 
         <CaminhoFormatura color={CAMINHO_COR} from={41} to={50} />
