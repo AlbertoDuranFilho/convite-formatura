@@ -35,12 +35,12 @@ export default function SecaoEngracada() {
         custom={0}
         variants={fadeUp}
       >
-        Mas como nem tudo são flores, e esta formanda que vos fala é muito
-        organizada e metódica — como vocês bem conhecem!
+        Esta formanda que vos fala é muito organizada e metódica — como vocês
+        bem conhecem!
       </motion.p>
 
       <motion.p
-        className="font-corpo text-tinta text-center text-lg leading-relaxed mb-3"
+        className="font-corpo text-tinta text-center text-sm leading-relaxed mb-3"
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.5 }}

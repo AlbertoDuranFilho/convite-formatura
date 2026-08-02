@@ -9,26 +9,9 @@ const VINCO_ESCURO = '#1F3327'
 function CaduceusSeal() {
   return (
     <svg viewBox="0 0 48 48" className="w-9 h-9" fill="none" style={{ filter: 'drop-shadow(0 1px 0.5px rgba(0,0,0,.45))' }}>
-      <line x1="24" y1="6" x2="24" y2="42" stroke="#FAF5EA" strokeWidth="1.6" strokeLinecap="round" />
       <path
-        d="M24 10c-5 3-8 3-8 7s5 4 5 8-5 4-5 8 3 4 8 7"
-        stroke="#FAF5EA"
-        strokeWidth="1.3"
-        fill="none"
-        strokeLinecap="round"
-      />
-      <path
-        d="M24 10c5 3 8 3 8 7s-5 4-5 8 5 4 5 8-3 4-8 7"
-        stroke="#FAF5EA"
-        strokeWidth="1.3"
-        fill="none"
-        strokeLinecap="round"
-      />
-      <path
-        d="M24 4c-4 0-6 3-6 3s3 2 6 2 6-2 6-2-2-3-6-3z"
-        stroke="#FAF5EA"
-        strokeWidth="1.2"
-        fill="none"
+        d="M20 8h8v12h12v8H28v12h-8V28H8v-8h12V8z"
+        fill="#FAF5EA"
       />
     </svg>
   )

@@ -86,7 +86,7 @@ export default function SecaoSaveTheDate() {
         custom={0.3}
         variants={fadeUp}
       >
-        Você é meu convidado especial para o baile de formatura!
+        Você é meu convidado especial para esse momento!
       </motion.p>
 
       <motion.a
