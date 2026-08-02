@@ -6,17 +6,6 @@ const NOISE_URL =
 
 const VINCO_ESCURO = '#1F3327'
 
-function CaduceusSeal() {
-  return (
-    <svg viewBox="0 0 48 48" className="w-9 h-9" fill="none" style={{ filter: 'drop-shadow(0 1px 0.5px rgba(0,0,0,.45))' }}>
-      <path
-        d="M20 8h8v12h12v8H28v12h-8V28H8v-8h12V8z"
-        fill="#FAF5EA"
-      />
-    </svg>
-  )
-}
-
 const CRACK_MS = 180
 
 export default function Envelope({ onOpen }) {
@@ -194,7 +183,6 @@ export default function Envelope({ onOpen }) {
                   animate={{ opacity: cracking ? [0, 1, 0] : 0 }}
                   transition={{ duration: CRACK_MS / 1000, ease: 'easeOut' }}
                 />
-                <CaduceusSeal />
               </motion.div>
             </motion.div>
 
