@@ -88,7 +88,7 @@ export default function SecaoSaveTheDate() {
       >
         Você é meu convidado especial para esse momento!
       </motion.p>
-
+      {/* 
       <motion.a
         href="https://docs.google.com/forms/d/e/1FAIpQLSfIvyF4y8QrCAfW45pdJLHjptSvOEo2W6-Qq3CkPe5uOi2O3w/viewform"
         target="_blank"
@@ -101,7 +101,7 @@ export default function SecaoSaveTheDate() {
         variants={fadeUp}
       >
         Confirmar presença
-      </motion.a>
+      </motion.a> */}
     </section>
   );
 }

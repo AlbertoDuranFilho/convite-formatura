@@ -33,7 +33,7 @@ export default function SecaoLembrete() {
         custom={0.1}
         variants={fadeUp}
       >
-        Tô vendo você enrolando para responder o forms!
+        Não deixe para depois para responder o forms
       </motion.p>
 
       <motion.a
